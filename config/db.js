@@ -5,7 +5,7 @@ const db = async () => {
         console.log('✅ MongoDB connected');
     });
 
-    await mongoose.connect(`${process.env.MONGODB_URI}/Medflymin`);
+    await mongoose.connect(process.env.MONGODB_URI);
 };
 
 export default db;
